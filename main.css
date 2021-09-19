@@ -1,0 +1,152 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+@import url(http://fonts.googleapis.com/css?family=Volkhov:400italic);
+*{
+  font-family: 'Roboto', sans-serif;
+  padding: 0%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+.borde {
+  padding: 3px 10px;
+  border: rgba(0,0,0,0.5) 5px solid;
+  border-radius:  20px;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    transition: 0.5s;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .responsive-iframe2 {
+    transition: 0.5s;
+    position: absolute;
+    top: 120px;
+    left: 400px;
+    bottom: 0;
+    right: 0;
+    width: 1040px;
+    height: 768px;
+    padding: 3px 10px;
+    border: rgba(0,0,0,0.5) 5px solid;
+    border-radius:  20px;
+  }
+  
+  .responsive-iframe3 {
+    transition: 0.5s;
+    position: absolute;
+    top: 120px;
+    left: 450px;
+    bottom: 0;
+    right: 0;
+    width: 767px;
+    height: 830px;
+    padding: 3px 10px;
+    border: rgba(0,0,0,0.5) 5px solid;
+    border-radius:  20px;
+  }
+  
+  .responsive-iframe4 {
+    transition: 0.5s;
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    bottom: 0;
+    right: 0;
+    width: 375px;
+    height: 568px;
+    padding: 3px 10px;
+    border: rgba(0,0,0,0.5) 5px solid;
+    border-radius:  20px;
+  }
+
+
+/* Navigation */
+.nav-main {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 20px 0;
+  
+}
+
+.nav-brand {
+  width: 50px;
+}
+
+/* Navbar Left */
+.nav-main img{
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100px;
+
+}
+
+.nav-main h2{
+  margin-top: 10px;
+  margin-left: 20px;
+  size: 14;
+  opacity: 0.8;
+}
+.nav-main h3{
+  
+  margin-left: 20px;
+  size: 12;
+  opacity: 0.8;
+}
+.nav-main h4{
+  
+  margin-left: 20px;
+  size: 10;
+  opacity: 0.8;
+}
+.nav-main ul {
+  display: flex;
+}
+
+.nav-main ul li {
+  padding: 10px;
+}
+
+.nav-main ul li a {
+  padding: 2px;
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+}
+.nav-main ul li button {
+  padding: 2px;
+  text-decoration: none;
+  border-style: none;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+}
+.nav-main ul li button:hover {
+  cursor: pointer;
+}
+
+.nav-main ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 20px;
+}

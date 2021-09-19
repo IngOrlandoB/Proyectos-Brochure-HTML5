@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav class="nav-main">
+          <!-- Brand -->
+          <div class="menu-btn">
+          <img src="img/idw2.svg" alt="logo">
+          </div>
+          <div>
+              <h2>Ingeniería & Desarrollo web</h2>
+              <h3>li¿Cómo se veria mi página web?</h3>
+              <h4>Ing. Alfonso Benavides</h4>
+          </div>
+          <ul class="nav-menu">
+            <li>
+              <i class="medium material-icons">desktop_mac</i>
+              <button id="escritorio">Escritorio</button>
+            </li>
+            <li>
+              <i class="medium material-icons">tablet_mac</i>
+              <button id="tablet">Tablet</button>
+            </li>
+            <li>
+                <i class="medium material-icons">tablet</i>
+                <button id="tabletp">Tablet portrait</button>
+              </li>
+            <li>
+              <i class="medium material-icons">phone_iphone</i>
+              <button id="celular">Celular</button>
+            </li>
+          </header>
+          
+      <iframe id="frame" class="responsive-iframe" src="index.html"></iframe> 
+      <script>
+
+        const escritorio = document.getElementById("escritorio");
+        const tablet = document.getElementById("tablet");
+        const tabletp = document.getElementById("tabletp");
+        const celular = document.getElementById("celular");
+
+        escritorio.addEventListener('click', function(){
+            frame.classList.remove('responsive-iframe2');
+            frame.classList.remove('responsive-iframe3');
+            frame.classList.remove('responsive-iframe4');
+            frame.classList.add('responsive-iframe');
+        });
+
+        tablet.addEventListener('click', function(){
+            frame.classList.remove('responsive-iframe');
+            frame.classList.remove('responsive-iframe3');
+            frame.classList.remove('responsive-iframe4');
+            frame.classList.add('responsive-iframe2');
+        });
+
+        tabletp.addEventListener('click', function(){
+            frame.classList.remove('responsive-iframe');
+            frame.classList.remove('responsive-iframe2');
+            frame.classList.remove('responsive-iframe4');
+            frame.classList.add('responsive-iframe3');
+        });
+
+        celular.addEventListener('click', function(){
+            frame.classList.remove('responsive-iframe');
+            frame.classList.remove('responsive-iframe2');
+            frame.classList.remove('responsive-iframe3');
+            frame.classList.add('responsive-iframe4');
+        });
+
+
+      </script>
+</body>
+</html>
